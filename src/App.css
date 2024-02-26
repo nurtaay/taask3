@@ -1,72 +1,69 @@
 .App {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  text-align: center;
   font-family: Arial, sans-serif;
 }
 
 h1 {
-  font-size: 24px;
   margin-bottom: 20px;
 }
-p {
-  margin-bottom: 10px;
-  line-height: 1.5;
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  height: 20px;
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 8px;
+  margin-right: 10px;
 }
 
 button {
+  width: 150px;
+  height: 40px;
+  border: 3px solid #08125b;
+  border-radius: 10px;
   padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #2e212e;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #0056b3;
 }
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  width: 100%;
-  padding: 8px;
+
+.task-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
 }
 
-.AddTaskForm {
-  margin-bottom: 20px;
+input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-.TaskList {
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.task {
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-.task-title {
-  font-weight: bold;
-}
-
-.task-description {
-  margin-top: 5px;
-  color: #666666;
+.title {
+  flex-grow: 1;
 }
 
 .delete-button {
-  background: red;
-  margin-left: 15px;
-  color: #ffffff;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
   cursor: pointer;
+  margin-left: 340px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+textarea{
+  width: 340px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 8px;
 }

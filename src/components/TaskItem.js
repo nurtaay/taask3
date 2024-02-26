@@ -7,7 +7,7 @@ function TaskItem({ task }) {
     return (
         <div>
             <input type="checkbox" checked={task.completed} onChange={() => toggleTask(task.id)} />
-            <span>{task.title}</span>
+            <textarea className={'title'}>{task.title}</textarea>
             <button className={'delete-button'} onClick={() => deleteTask(task.id)}>Delete</button>
         </div>
     );
